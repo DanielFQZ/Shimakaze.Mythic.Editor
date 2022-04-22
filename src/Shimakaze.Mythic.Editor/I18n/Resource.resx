@@ -1,0 +1,456 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Action.Header" xml:space="preserve">
+    <value>Action</value>
+    <comment>HeaderControl Action.Header</comment>
+  </data>
+  <data name="AIGoalSelectors.Header" xml:space="preserve">
+    <value>AIGoalSelectors</value>
+    <comment>HeaderControl AIGoalSelectors.Header</comment>
+  </data>
+  <data name="AITargetSelectors.Header" xml:space="preserve">
+    <value>AITargetSelectors</value>
+    <comment>HeaderControl AITargetSelectors.Header</comment>
+  </data>
+  <data name="Color.Header" xml:space="preserve">
+    <value>Color</value>
+    <comment>HeaderControl Color.Header</comment>
+  </data>
+  <data name="Conditions.Header" xml:space="preserve">
+    <value>Conditions</value>
+    <comment>HeaderControl Conditions.Header</comment>
+  </data>
+  <data name="DamageModifiers.Header" xml:space="preserve">
+    <value>DamageModifiers</value>
+    <comment>HeaderControl DamageModifiers.Header</comment>
+  </data>
+  <data name="Disguise.Header" xml:space="preserve">
+    <value>Disguise</value>
+    <comment>HeaderControl Disguise.Header</comment>
+  </data>
+  <data name="Display.Header" xml:space="preserve">
+    <value>Display</value>
+    <comment>HeaderControl Display.Header</comment>
+  </data>
+  <data name="Drops.Header" xml:space="preserve">
+    <value>Drops</value>
+    <comment>HeaderControl Drops.Header</comment>
+  </data>
+  <data name="DropsPerLevel.Header" xml:space="preserve">
+    <value>DropsPerLevel</value>
+    <comment>HeaderControl DropsPerLevel.Header</comment>
+  </data>
+  <data name="Enchantments.Header" xml:space="preserve">
+    <value>Enchantments</value>
+    <comment>HeaderControl Enchantments.Header</comment>
+  </data>
+  <data name="Equipment.Header" xml:space="preserve">
+    <value>Equipment</value>
+    <comment>HeaderControl Equipment.Header</comment>
+  </data>
+  <data name="Faction.Header" xml:space="preserve">
+    <value>Faction</value>
+    <comment>HeaderControl Faction.Header</comment>
+  </data>
+  <data name="Hide.Header" xml:space="preserve">
+    <value>Hide</value>
+    <comment>HeaderControl Hide.Header</comment>
+  </data>
+  <data name="Id.Header" xml:space="preserve">
+    <value>Id</value>
+    <comment>HeaderControl Id.Header</comment>
+  </data>
+  <data name="KillMessages.Header" xml:space="preserve">
+    <value>KillMessages</value>
+    <comment>HeaderControl KillMessages.Header</comment>
+  </data>
+  <data name="LevelModifiers.Header" xml:space="preserve">
+    <value>LevelModifiers</value>
+    <comment>HeaderControl LevelModifiers.Header</comment>
+  </data>
+  <data name="Lore.Header" xml:space="preserve">
+    <value>Lore</value>
+    <comment>HeaderControl Lore.Header</comment>
+  </data>
+  <data name="MobName.Header" xml:space="preserve">
+    <value>MobName</value>
+    <comment>HeaderControl MobName.Header</comment>
+  </data>
+  <data name="Modules.Header" xml:space="preserve">
+    <value>Modules</value>
+    <comment>HeaderControl Modules.Header</comment>
+  </data>
+  <data name="Mount.Header" xml:space="preserve">
+    <value>Mount</value>
+    <comment>HeaderControl Mount.Header</comment>
+  </data>
+  <data name="Options.Header" xml:space="preserve">
+    <value>Options</value>
+    <comment>HeaderControl Options.Header</comment>
+  </data>
+  <data name="Player.Header" xml:space="preserve">
+    <value>Player</value>
+    <comment>HeaderControl Player.Header</comment>
+  </data>
+  <data name="PotionEffects.Header" xml:space="preserve">
+    <value>PotionEffects</value>
+    <comment>HeaderControl PotionEffects.Header</comment>
+  </data>
+  <data name="Skills.Header" xml:space="preserve">
+    <value>Skills</value>
+    <comment>HeaderControl Skills.Header</comment>
+  </data>
+  <data name="Skin.Header" xml:space="preserve">
+    <value>Skin</value>
+    <comment>HeaderControl Skin.Header</comment>
+  </data>
+  <data name="SpawnerGroup.Header" xml:space="preserve">
+    <value>SpawnerGroup</value>
+    <comment>HeaderControl SpawnerGroup.Header</comment>
+  </data>
+  <data name="Type.Header" xml:space="preserve">
+    <value>Type</value>
+    <comment>HeaderControl Type.Header</comment>
+  </data>
+  <data name="World.Header" xml:space="preserve">
+    <value>World</value>
+    <comment>HeaderControl World.Header</comment>
+  </data>
+  <data name="Worlds.Header" xml:space="preserve">
+    <value>Worlds</value>
+    <comment>HeaderControl Worlds.Header</comment>
+  </data>
+  <data name="Breakable.Content" xml:space="preserve">
+    <value>Breakable</value>
+    <comment>ToggleSwitch Breakable.Content</comment>
+  </data>
+  <data name="CheckForPlayers.Content" xml:space="preserve">
+    <value>CheckForPlayers</value>
+    <comment>ToggleSwitch CheckForPlayers.Content</comment>
+  </data>
+  <data name="Despawn.Content" xml:space="preserve">
+    <value>Despawn</value>
+    <comment>ToggleSwitch Despawn.Content</comment>
+  </data>
+  <data name="HealOnLeash.Content" xml:space="preserve">
+    <value>HealOnLeash</value>
+    <comment>ToggleSwitch HealOnLeash.Content</comment>
+  </data>
+  <data name="HideFlags.Content" xml:space="preserve">
+    <value>HideFlags</value>
+    <comment>ToggleSwitch HideFlags.Content</comment>
+  </data>
+  <data name="ImmunityTable.Content" xml:space="preserve">
+    <value>ImmunityTable</value>
+    <comment>ToggleSwitch ImmunityTable.Content</comment>
+  </data>
+  <data name="PreventItemPickup.Content" xml:space="preserve">
+    <value>PreventItemPickup</value>
+    <comment>ToggleSwitch PreventItemPickup.Content</comment>
+  </data>
+  <data name="PreventOtherDrops.Content" xml:space="preserve">
+    <value>PreventOtherDrops</value>
+    <comment>ToggleSwitch PreventOtherDrops.Content</comment>
+  </data>
+  <data name="ResetThreatOnLeash.Content" xml:space="preserve">
+    <value>ResetThreatOnLeash</value>
+    <comment>ToggleSwitch ResetThreatOnLeash.Content</comment>
+  </data>
+  <data name="ShowFlames.Content" xml:space="preserve">
+    <value>ShowFlames</value>
+    <comment>ToggleSwitch ShowFlames.Content</comment>
+  </data>
+  <data name="ThreatTable.Content" xml:space="preserve">
+    <value>ThreatTable</value>
+    <comment>ToggleSwitch ThreatTable.Content</comment>
+  </data>
+  <data name="Unbreakable.Content" xml:space="preserve">
+    <value>Unbreakable</value>
+    <comment>ToggleSwitch Unbreakable.Content</comment>
+  </data>
+  <data name="UseTimer.Content" xml:space="preserve">
+    <value>UseTimer</value>
+    <comment>ToggleSwitch UseTimer.Content</comment>
+  </data>
+  <data name="UseWorldScaling.Content" xml:space="preserve">
+    <value>UseWorldScaling</value>
+    <comment>ToggleSwitch UseWorldScaling.Content</comment>
+  </data>
+  <data name="ActivationRange.Label" xml:space="preserve">
+    <value>ActivationRange: </value>
+    <comment>LabelControl ActivationRange.Label</comment>
+  </data>
+  <data name="ActiveMobs.Label" xml:space="preserve">
+    <value>ActiveMobs: </value>
+    <comment>LabelControl ActiveMobs.Label</comment>
+  </data>
+  <data name="Amount.Label" xml:space="preserve">
+    <value>Amount: </value>
+    <comment>LabelControl Amount.Label</comment>
+  </data>
+  <data name="Armor.Label" xml:space="preserve">
+    <value>Armor: </value>
+    <comment>LabelControl Armor.Label</comment>
+  </data>
+  <data name="Chance.Label" xml:space="preserve">
+    <value>Chance: </value>
+    <comment>LabelControl Chance.Label</comment>
+  </data>
+  <data name="Cooldown.Label" xml:space="preserve">
+    <value>Cooldown: </value>
+    <comment>LabelControl Cooldown.Label</comment>
+  </data>
+  <data name="CooldownTimer.Label" xml:space="preserve">
+    <value>CooldownTimer: </value>
+    <comment>LabelControl CooldownTimer.Label</comment>
+  </data>
+  <data name="Damage.Label" xml:space="preserve">
+    <value>Damage: </value>
+    <comment>LabelControl Damage.Label</comment>
+  </data>
+  <data name="Data.Label" xml:space="preserve">
+    <value>Data: </value>
+    <comment>LabelControl Data.Label</comment>
+  </data>
+  <data name="FollowRange.Label" xml:space="preserve">
+    <value>FollowRange: </value>
+    <comment>LabelControl FollowRange.Label</comment>
+  </data>
+  <data name="Health.Label" xml:space="preserve">
+    <value>Health: </value>
+    <comment>LabelControl Health.Label</comment>
+  </data>
+  <data name="KnockbackResistance.Label" xml:space="preserve">
+    <value>KnockbackResistance: </value>
+    <comment>LabelControl KnockbackResistance.Label</comment>
+  </data>
+  <data name="LeashRange.Label" xml:space="preserve">
+    <value>LeashRange: </value>
+    <comment>LabelControl LeashRange.Label</comment>
+  </data>
+  <data name="Level.Label" xml:space="preserve">
+    <value>Level: </value>
+    <comment>LabelControl Level.Label</comment>
+  </data>
+  <data name="MaxMobs.Label" xml:space="preserve">
+    <value>MaxMobs: </value>
+    <comment>LabelControl MaxMobs.Label</comment>
+  </data>
+  <data name="MobLevel.Label" xml:space="preserve">
+    <value>MobLevel: </value>
+    <comment>LabelControl MobLevel.Label</comment>
+  </data>
+  <data name="MobsPerSpawn.Label" xml:space="preserve">
+    <value>MobsPerSpawn: </value>
+    <comment>LabelControl MobsPerSpawn.Label</comment>
+  </data>
+  <data name="MovementSpeed.Label" xml:space="preserve">
+    <value>MovementSpeed: </value>
+    <comment>LabelControl MovementSpeed.Label</comment>
+  </data>
+  <data name="Priority.Label" xml:space="preserve">
+    <value>Priority: </value>
+    <comment>LabelControl Priority.Label</comment>
+  </data>
+  <data name="Radius.Label" xml:space="preserve">
+    <value>Radius: </value>
+    <comment>LabelControl Radius.Label</comment>
+  </data>
+  <data name="RadiusY.Label" xml:space="preserve">
+    <value>RadiusY: </value>
+    <comment>LabelControl RadiusY.Label</comment>
+  </data>
+  <data name="Warmup.Label" xml:space="preserve">
+    <value>Warmup: </value>
+    <comment>LabelControl Warmup.Label</comment>
+  </data>
+  <data name="WarmupTimer.Label" xml:space="preserve">
+    <value>WarmupTimer: </value>
+    <comment>LabelControl WarmupTimer.Label</comment>
+  </data>
+  <data name="X.Label" xml:space="preserve">
+    <value>X: </value>
+    <comment>X.Label</comment>
+  </data>
+  <data name="Y.Label" xml:space="preserve">
+    <value>Y: </value>
+    <comment>Y.Label</comment>
+  </data>
+  <data name="Z.Label" xml:space="preserve">
+    <value>Z: </value>
+    <comment>Z.Label</comment>
+  </data>
+  <data name="File.Header" xml:space="preserve">
+    <value>File</value>
+    <comment>MenuItem File.Header</comment>
+  </data>
+  <data name="NewFile.Header" xml:space="preserve">
+    <value>New File</value>
+    <comment>MenuItem NewFile.Header</comment>
+  </data>
+  <data name="OpenFile.Header" xml:space="preserve">
+    <value>Open File</value>
+    <comment>MenuItem OpenFile.Header</comment>
+  </data>
+  <data name="SaveFile.Header" xml:space="preserve">
+    <value>Save File</value>
+    <comment>MenuItem SaveFile.Header</comment>
+  </data>
+  <data name="SaveAsFile.Header" xml:space="preserve">
+    <value>Save As File</value>
+    <comment>MenuItem SaveAsFile.Header</comment>
+  </data>
+  <data name="Add.Header" xml:space="preserve">
+    <value>Add</value>
+    <comment>MenuItem Add.Header</comment>
+  </data>
+  <data name="Clone.Header" xml:space="preserve">
+    <value>Clone</value>
+    <comment>MenuItem Clone.Header</comment>
+  </data>
+  <data name="Drop.Header" xml:space="preserve">
+    <value>Drop</value>
+    <comment>MenuItem Drop.Header</comment>
+  </data>
+  <data name="MainWindow.Title" xml:space="preserve">
+    <value>Shimakaze.Mythic.Editor</value>
+    <comment>MainWindow MainWindow.Title</comment>
+  </data>
+  <data name="Spawner.Content" xml:space="preserve">
+    <value>Spawner Page</value>
+    <comment>NavigationItem Spawner.Content</comment>
+  </data>
+  <data name="RandomSpawn.Content" xml:space="preserve">
+    <value>Random Spawn Page</value>
+    <comment>NavigationItem RandomSpawn.Content</comment>
+  </data>
+  <data name="Item.Content" xml:space="preserve">
+    <value>Item Page</value>
+    <comment>NavigationItem Item.Content</comment>
+  </data>
+  <data name="Mob.Content" xml:space="preserve">
+    <value>Mob Page</value>
+    <comment>NavigationItem Mob.Content</comment>
+  </data>
+  <data name="Droptable.Content" xml:space="preserve">
+    <value>Droptable Page</value>
+    <comment>NavigationItem Droptable.Content</comment>
+  </data>
+</root>

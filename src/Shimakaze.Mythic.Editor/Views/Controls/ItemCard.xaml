@@ -1,0 +1,150 @@
+﻿<UserControl
+    x:Class="Shimakaze.Mythic.Editor.Views.Controls.ItemCard"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Shimakaze.Mythic.Editor.Views.Controls"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="clr-namespace:Shimakaze.Mythic.Editor.ViewModels"
+    xmlns:wpfui="clr-namespace:WPFUI.Controls;assembly=WPFUI"
+    d:DataContext="{d:DesignInstance Type=vm:ItemCardViewModel}"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    mc:Ignorable="d">
+    <StackPanel>
+        <wpfui:Card Margin="8">
+            <UniformGrid MinWidth="200" Columns="1">
+                <local:HeaderControl x:Uid="Name" Margin="4">
+                    <wpfui:TextBox Text="{Binding Name}" />
+                </local:HeaderControl>
+                <local:HeaderControl x:Uid="Display" Margin="4">
+                    <wpfui:TextBox Text="{Binding Display}" />
+                </local:HeaderControl>
+            </UniformGrid>
+        </wpfui:Card>
+
+
+        <wpfui:Card Margin="8">
+            <UniformGrid Columns="3">
+                <local:LabelControl x:Uid="Data" Margin="4" LabelLength="120">
+                    <wpfui:NumberBox MinWidth="120" Text="{Binding Data, Converter={StaticResource DecimalStringValueConverter}}" />
+                </local:LabelControl>
+                <local:LabelControl x:Uid="Amount" Margin="4" LabelLength="120">
+                    <wpfui:NumberBox MinWidth="120" Text="{Binding Amount, Converter={StaticResource DecimalStringValueConverter}}" />
+                </local:LabelControl>
+            </UniformGrid>
+        </wpfui:Card>
+
+        <local:DatItemThoughOptionsCard DataContext="Options" />
+
+        <wpfui:Card Margin="8">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="auto" />
+                </Grid.RowDefinitions>
+
+                <local:HeaderControl x:Uid="Lores" Margin="2 4">
+                    <ListBox Grid.Row="1" MinHeight="100" ItemsSource="{Binding Lores}" SelectedItem="{Binding SelectedLore}" />
+                </local:HeaderControl>
+
+                <StackPanel Grid.Row="2">
+                    <local:HeaderControl x:Uid="EditLore" Margin="2 4">
+                        <wpfui:TextBox MinWidth="200" Text="{Binding EditLore}" />
+                    </local:HeaderControl>
+                    <UniformGrid Rows="1">
+                        <wpfui:Button Margin="2 4" Appearance="Secondary" Command="{Binding ApplyLoreCommand}" Icon="Edit28" />
+                        <wpfui:Button Margin="2 4" Appearance="Secondary" Command="{Binding AddLoreCommand}" Icon="Add28" />
+                        <wpfui:Button Margin="2 4" Appearance="Secondary" Command="{Binding DropLoreCommand}" Icon="Delete48" />
+                        <wpfui:Button Margin="2 4" Appearance="Secondary" Command="{Binding MoveLoreUpCommand}" Icon="ArrowUp28" />
+                        <wpfui:Button Margin="2 4" Appearance="Secondary" Command="{Binding MoveLoreDownCommand}" Icon="ArrowDown28" />
+                    </UniformGrid>
+                </StackPanel>
+            </Grid>
+        </wpfui:Card>
+
+        <wpfui:Card Margin="8">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="auto" />
+                </Grid.RowDefinitions>
+
+                <local:HeaderControl x:Uid="Enchantments" Margin="2 4">
+                    <ListBox Grid.Row="1" MinHeight="100" ItemsSource="{Binding Enchantments}" SelectedItem="{Binding SelectedEnchantment}" />
+                </local:HeaderControl>
+
+                <StackPanel Grid.Row="2">
+                    <local:HeaderControl x:Uid="EditEnchantment" Margin="2 4">
+                        <wpfui:TextBox MinWidth="200" Text="{Binding EditEnchantment}" />
+                    </local:HeaderControl>
+                    <UniformGrid Rows="1">
+                        <wpfui:Button Margin="2 4" Appearance="Secondary" Command="{Binding ApplyEnchantmentCommand}" Icon="Edit28" />
+                        <wpfui:Button Margin="2 4" Appearance="Secondary" Command="{Binding AddEnchantmentCommand}" Icon="Add28" />
+                        <wpfui:Button Margin="2 4" Appearance="Secondary" Command="{Binding DropEnchantmentCommand}" Icon="Delete48" />
+                        <wpfui:Button Margin="2 4" Appearance="Secondary" Command="{Binding MoveEnchantmentUpCommand}" Icon="ArrowUp28" />
+                        <wpfui:Button Margin="2 4" Appearance="Secondary" Command="{Binding MoveEnchantmentDownCommand}" Icon="ArrowDown28" />
+                    </UniformGrid>
+                </StackPanel>
+            </Grid>
+        </wpfui:Card>
+
+        <wpfui:Card Margin="8">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="auto" />
+                </Grid.RowDefinitions>
+
+                <local:HeaderControl x:Uid="PotionEffects" Margin="2 4">
+                    <ListBox Grid.Row="1" MinHeight="100" ItemsSource="{Binding PotionEffects}" SelectedItem="{Binding SelectedPotionEffect}" />
+                </local:HeaderControl>
+
+                <StackPanel Grid.Row="2">
+                    <local:HeaderControl x:Uid="EditPotionEffect" Margin="2 4">
+                        <wpfui:TextBox MinWidth="200" Text="{Binding EditPotionEffect}" />
+                    </local:HeaderControl>
+                    <UniformGrid Rows="1">
+                        <wpfui:Button Margin="2 4" Appearance="Secondary" Command="{Binding ApplyPotionEffectCommand}" Icon="Edit28" />
+                        <wpfui:Button Margin="2 4" Appearance="Secondary" Command="{Binding AddPotionEffectCommand}" Icon="Add28" />
+                        <wpfui:Button Margin="2 4" Appearance="Secondary" Command="{Binding DropPotionEffectCommand}" Icon="Delete48" />
+                        <wpfui:Button Margin="2 4" Appearance="Secondary" Command="{Binding MovePotionEffectUpCommand}" Icon="ArrowUp28" />
+                        <wpfui:Button Margin="2 4" Appearance="Secondary" Command="{Binding MovePotionEffectDownCommand}" Icon="ArrowDown28" />
+                    </UniformGrid>
+                </StackPanel>
+            </Grid>
+        </wpfui:Card>
+
+        <wpfui:Card Margin="8">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="auto" />
+                </Grid.RowDefinitions>
+
+                <local:HeaderControl x:Uid="Hides" Margin="2 4">
+                    <ListBox Grid.Row="1" MinHeight="100" ItemsSource="{Binding Hides}" SelectedItem="{Binding SelectedHide}" />
+                </local:HeaderControl>
+
+                <StackPanel Grid.Row="2">
+                    <local:HeaderControl x:Uid="EditHide" Margin="2 4">
+                        <wpfui:TextBox MinWidth="200" Text="{Binding EditHide}" />
+                    </local:HeaderControl>
+                    <UniformGrid Rows="1">
+                        <wpfui:Button Margin="2 4" Appearance="Secondary" Command="{Binding ApplyHideCommand}" Icon="Edit28" />
+                        <wpfui:Button Margin="2 4" Appearance="Secondary" Command="{Binding AddHideCommand}" Icon="Add28" />
+                        <wpfui:Button Margin="2 4" Appearance="Secondary" Command="{Binding DropHideCommand}" Icon="Delete48" />
+                        <wpfui:Button Margin="2 4" Appearance="Secondary" Command="{Binding MoveHideUpCommand}" Icon="ArrowUp28" />
+                        <wpfui:Button Margin="2 4" Appearance="Secondary" Command="{Binding MoveHideDownCommand}" Icon="ArrowDown28" />
+                    </UniformGrid>
+                </StackPanel>
+            </Grid>
+        </wpfui:Card>
+
+
+    </StackPanel>
+</UserControl>

@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32414.318
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{74693FFF-93CC-45C0-8DA9-148ED4C466D1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shimakaze.Mythic.Editor", "src\Shimakaze.Mythic.Editor\Shimakaze.Mythic.Editor.csproj", "{59E91BD2-7FB5-4A4A-9002-2B1083F948D8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{9A0C2826-C02B-4D10-93CE-94D00AFC0260}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shiamakze.Mythic.Editor.Test", "test\Shiamakze.Mythic.Editor.Test\Shiamakze.Mythic.Editor.Test.csproj", "{F4D100C7-5EAE-463E-A88B-0A08CE1F0CB5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Folder", "Solution Folder", "{56A78408-E89F-4EB5-BFEA-5BDB1DC91F0E}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		global.json = global.json
+		LICENSE = LICENSE
+		ReadMe.md = ReadMe.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{59E91BD2-7FB5-4A4A-9002-2B1083F948D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59E91BD2-7FB5-4A4A-9002-2B1083F948D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59E91BD2-7FB5-4A4A-9002-2B1083F948D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59E91BD2-7FB5-4A4A-9002-2B1083F948D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4D100C7-5EAE-463E-A88B-0A08CE1F0CB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4D100C7-5EAE-463E-A88B-0A08CE1F0CB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4D100C7-5EAE-463E-A88B-0A08CE1F0CB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4D100C7-5EAE-463E-A88B-0A08CE1F0CB5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{59E91BD2-7FB5-4A4A-9002-2B1083F948D8} = {74693FFF-93CC-45C0-8DA9-148ED4C466D1}
+		{F4D100C7-5EAE-463E-A88B-0A08CE1F0CB5} = {9A0C2826-C02B-4D10-93CE-94D00AFC0260}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D2C0D787-D22E-44CC-BD5B-4BBD1CCE47B9}
+	EndGlobalSection
+EndGlobal

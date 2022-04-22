@@ -1,0 +1,9 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:cvtrs="clr-namespace:Shimakaze.Mythic.Editor.ValueConverters">
+    <cvtrs:IsStringNullOrEmptyToVisibilityValueConverter x:Key="IsStringNullOrEmptyToVisibilityValueConverter" />
+    <cvtrs:ExistsToVisibilityValueConverter x:Key="ExistsToVisibilityValueConverter" />
+    <cvtrs:DecimalStringValueConverter x:Key="DecimalStringValueConverter" />
+    <cvtrs:StringAndNullableDecimalValueConverter x:Key="StringAndNullableDecimalValueConverter" />
+</ResourceDictionary>
